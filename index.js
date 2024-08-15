@@ -38,11 +38,11 @@ const users = [
   {
     userName: "Sergey",
     hairColor: "black",
-    eyeColor: "brown",
+    eyeColor: "blue",
   },
 ];
 
-const eyeColorOfUsers = users.map(user => user.eyeColor);
+const eyeColorOfUsers = users.filter(user => user.eyeColor === "blue");
 
 console.log(eyeColorOfUsers);
 
@@ -67,7 +67,7 @@ const people = [
   },
 ];
 
-const genders = people.map(somePeople => somePeople.gender);
+const genders = people.filter(somePeople => somePeople.gender === "woman");
 
 console.log(genders);
 
